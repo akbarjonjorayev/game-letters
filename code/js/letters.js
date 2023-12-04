@@ -3,7 +3,6 @@ import * as appData from './data.js'
 import * as HTML from './html.js'
 import * as Element from './element.js'
 import * as Move from './move.js'
-import * as Get from './get.js'
 import * as Check from './check.js'
 
 const letters = Array.from({ length: 26 }, (_, i) =>
@@ -43,6 +42,7 @@ document.onkeyup = (e) => {
     const letter = cons[i].innerText
 
     if (letter == key) {
+      appData.data.user.star++
       cons[i].remove()
     }
   }
