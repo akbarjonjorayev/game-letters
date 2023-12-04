@@ -56,6 +56,21 @@ body {
   opacity: 0;
 }
 
+.con {
+  transition: top 3s linear;
+  /* animation: moveToBottom 3s linear forwards; */
+}
+
+@keyframes moveToBottom {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: 100%;
+  }
+}
+
 :root {
   --con-size: 100px;
 }
